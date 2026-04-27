@@ -1,5 +1,4 @@
 import os
-
 import django
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'settings')
@@ -16,9 +15,3 @@ if __name__ == '__main__':
         if passcard.is_active:
             active_passcards += 1
     print("Активных пропусков:", active_passcards)
-
-    # some_Passcard = Passcards[0]
-    # print(some_Passcard.owner_name,
-    #       some_Passcard.created_at,
-    #       some_Passcard.is_active,
-    #       some_Passcard.passcode)
